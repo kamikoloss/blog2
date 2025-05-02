@@ -5,8 +5,8 @@ const { frontmatter } = Astro.props;
 
 <Layout>
 	<h2>
-		<span>{frontmatter.title}</span>
 		<span>{frontmatter.date}</span>
+		<span>{frontmatter.title}</span>
 	</h2>
 	<slot />
 </Layout>
