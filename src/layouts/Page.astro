@@ -1,5 +1,5 @@
 ---
-import Layout from "./Layout.astro";
+import Layout from './Layout.astro';
 const { frontmatter } = Astro.props;
 ---
 
@@ -8,5 +8,7 @@ const { frontmatter } = Astro.props;
 		<span>{frontmatter.date}</span>
 		<span>{frontmatter.title}</span>
 	</h2>
-	<slot />
+	<article>
+		<slot />
+	</article>
 </Layout>
