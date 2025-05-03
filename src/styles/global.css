@@ -1,79 +1,84 @@
 :root {
-  font-size: 16px;
-  line-height: 1.5rem;
-  font-family: sans-serif;
-  font-weight: 400;
-  color: var(--color-gray-900);
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-500: #6b7280;
-  --color-gray-700: #374151;
-  --color-gray-900: #111827;
+	font-size: 16px;
+	line-height: 1.5rem;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: var(--color-gray-900);
+	--color-gray-100: #f3f4f6;
+	--color-gray-300: #d1d5db;
+	--color-gray-500: #6b7280;
+	--color-gray-700: #374151;
+	--color-gray-900: #111827;
 }
 
 html * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
 }
 body {
-  max-width: 640px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 1rem;
-  border-left: 1px solid var(--color-gray-300);
-  border-right: 1px solid var(--color-gray-300);
+	max-width: 640px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 2rem;
+	border-left: 1px solid var(--color-gray-300);
+	border-right: 1px solid var(--color-gray-300);
 }
 
 a {
-  color: var(--color-gray-900);
-  word-break: break-all;
+	color: var(--color-gray-900);
+	word-break: break-all;
 }
 blockquote {
-  padding: 1px 1rem;
-  color: var(--color-gray-500);
-  background-color: var(--color-gray-100);
-  a {
-    color: var(--color-gray-500);
-  }
+	padding: 1px 1rem;
+	color: var(--color-gray-500);
+	background-color: var(--color-gray-100);
+	a {
+		color: var(--color-gray-500);
+	}
 }
-h1 {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
+h1,
 h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
 h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  margin: 1rem 0;
+	font-size: 1rem;
+	line-height: 1.5rem;
 }
 img {
-  max-width: 100%;
-  max-height: 320px;
+	max-width: 100%;
+	max-height: 320px;
 }
 p {
-  margin: 1rem 0;
-  text-align: justify;
+	text-align: justify;
 }
 pre {
-  padding: 1rem;
+	padding: 1rem;
+	tab-size: 2rem;
 }
 ul {
-  padding-left: 2rem;
+	padding-left: 2rem;
 }
-:not(li) > ul {
-  margin: 1rem 0;
+
+article {
+	margin: 2rem 0;
+}
+h3,
+hr,
+p,
+:not(li)>ul {
+	margin: 1rem 0;
 }
 
 .youtube {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  iframe {
-    width: 100%;
-    height: 100%;
-  }
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
 }
