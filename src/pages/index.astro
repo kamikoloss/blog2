@@ -5,14 +5,23 @@ const pages = (await Astro.glob('../pages/pages/*.md')).reverse();
 ---
 
 <Layout>
-	<ul>
-		{pages.map(page => (
+	<article>
+		<ul>
+			{pages.map(page => (
+				<li>
+					<a href={page.url}>
+						<span>{page.frontmatter.date}</span>
+						<span>{page.frontmatter.title}</span>
+					</a>
+				</li>
+			))}
+		</ul>
+	</article>
+	<article>
+		<ul>
 			<li>
-				<a href={page.url}>
-					<span>{page.frontmatter.date}</span>
-					<span>{page.frontmatter.title}</span>
-				</a>
+				<a href="https://gloxi.net">GLOXINIA</a>
 			</li>
-		))}
-	</ul>
+		</ul>
+	</article>
 </Layout>
