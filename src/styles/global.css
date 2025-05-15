@@ -1,9 +1,4 @@
 :root {
-	font-size: 16px;
-	line-height: 1.5rem;
-	font-family: sans-serif;
-	font-weight: 400;
-	color: var(--color-gray-900);
 	--color-gray-100: #f3f4f6;
 	--color-gray-300: #d1d5db;
 	--color-gray-500: #6b7280;
@@ -11,13 +6,18 @@
 	--color-gray-900: #111827;
 }
 
-html * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
 html {
 	height: 100%;
+	font-size: 16px;
+	line-height: 1.5rem;
+	font-family: sans-serif;
+	font-weight: 400;
+	color: var(--color-gray-900);
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
 }
 body {
 	max-width: 640px;
@@ -49,6 +49,11 @@ h3 {
 	font-size: 1rem;
 	line-height: 1.5rem;
 }
+hr {
+	height: 1px;
+	border: none;
+	border-top: 1px dashed var(--color-gray-300);
+}
 img {
 	max-width: 100%;
 	max-height: 320px;
@@ -64,13 +69,15 @@ ul {
 	padding-left: 2rem;
 }
 
-article {
+article,
+hr {	
 	margin: 2rem 0;
 }
+blockquote,
 h3,
-hr,
 p,
-:not(li)>ul {
+pre,
+:not(li) > ul {
 	margin: 1rem 0;
 }
 
