@@ -14,11 +14,12 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+const headTitle = `${SITE_TITLE} - ${post.data.date} ${post.data.title}`;
 ---
 
 <html lang="ja">
 	<head>
-		<BaseHead title={`${SITE_TITLE} - ${post.data.date} ${post.data.title}`} />
+		<BaseHead title={headTitle} image={post.data.image} />
 	</head>
 	<body>
 		<h1><a href="/">{SITE_TITLE}</a></h1>
