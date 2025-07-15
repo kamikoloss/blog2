@@ -18,7 +18,7 @@ const { Content } = await render(post);
 
 <html lang="ja">
 	<head>
-		<BaseHead title={`${SITE_TITLE} - ${post.data.title}`} />
+		<BaseHead title={`${SITE_TITLE} - ${post.data.date} ${post.data.title}`} />
 	</head>
 	<body>
 		<h1><a href="/">{SITE_TITLE}</a></h1>
