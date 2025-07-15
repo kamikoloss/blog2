@@ -9,7 +9,7 @@ interface Props {
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const defaultImageUrl = new URL(DEFAULT_IMAGE, Astro.url);
+const defaultImageUrl = new URL(DEFAULT_IMAGE, Astro.site);
 const { title, image = defaultImageUrl } = Astro.props;
 ---
 
