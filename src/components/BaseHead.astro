@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { DEFAULT_IMAGE } from '../consts';
+import { DEFAULT_IMAGE, SITE_DESCRIPTION } from '../consts';
 
 interface Props {
 	title: string;
@@ -25,18 +25,18 @@ const { title, image = defaultImageUrl } = Astro.props;
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
-<!--<meta name="description" content={description} />-->
+<meta name="description" content={SITE_DESCRIPTION} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
-<!--<meta property="og:description" content={description} />-->
+<meta property="og:description" content={SITE_DESCRIPTION} />
 <meta property="og:image" content={image} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
-<!--<meta property="twitter:description" content={description} />-->
+<meta property="twitter:description" content={SITE_DESCRIPTION} />
 <meta property="twitter:image" content={image} />
