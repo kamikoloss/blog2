@@ -14,7 +14,9 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} />
 	</head>
 	<body>
-		<h1><a href="/">{SITE_TITLE}</a></h1>
+		<header>
+			<h1><a href="/">{SITE_TITLE}</a></h1>
+		</header>
 		<hr />
 		<main>
 			<ul>
@@ -29,11 +31,14 @@ const posts = (await getCollection('blog')).sort(
 					))
 				}
 			</ul>
+		</main>
+		<hr />
+		<footer>
 			<ul>
 				<li>
 					<a href="https://gloxi.net">GLOXINIA</a>
 				</li>
 			</ul>
-		</main>
+		</footer>
 	</body>
 </html>

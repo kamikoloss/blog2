@@ -22,16 +22,20 @@ const headTitle = `${SITE_TITLE} - ${post.data.date} ${post.data.title}`;
 		<BaseHead title={headTitle} image={post.data.image} />
 	</head>
 	<body>
-		<h1><a href="/">{SITE_TITLE}</a></h1>
-		<h2>
-			<div>{post.data.date}</div>
-			<div>{post.data.title}</div>
-		</h2>
+		<header>
+			<h1><a href="/">{SITE_TITLE}</a></h1>
+			<h2>
+				<div>{post.data.date}</div>
+				<div>{post.data.title}</div>
+			</h2>
+		</header>
 		<hr />
 		<main>
 			<Content />
 		</main>
 		<hr />
-		<a href="/">&lt;&lt; Top</a>
+		<footer>
+			<a href="/">&lt;&lt; Top</a>
+		</footer>
 	</body>
 </html>
