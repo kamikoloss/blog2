@@ -72,21 +72,28 @@ ul {
 	padding-left: 2rem;
 }
 
+/* margins */
 hr,
-main {	
-	margin: 2rem 0;
+main,
+p:has(img) {	
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
 blockquote,
 h3,
 p,
 pre,
 :not(li) > ul {
-	margin: 1rem 0;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
+/* classes */
 .youtube {
 	width: 100%;
 	aspect-ratio: 16 / 9;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 	iframe {
 		width: 100%;
 		height: 100%;
