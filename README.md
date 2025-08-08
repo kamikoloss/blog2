@@ -13,8 +13,11 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 画像リサイズ方法メモ (ffmpeg)
+## リサイズ方法メモ (ffmpeg)
 
-- `ffmpeg -i input.jpg -vf scale=1280:-1 -quality <q> output.webp`
-- 幅が 1280px 未満の場合は `-vf scale=1280:-1` 部分は省略する
-- q: 中画質 = 75, 高画質 = 90
+- 画像
+    - `ffmpeg -i input.jpg -vf scale=1280:-1 output.webp`
+    - 幅が 1280px 未満の場合は `-vf scale=1280:-1` 部分は省略する
+- 動画
+    - `ffmpeg -i input.mp4 -vf scale=640:-1 -r 15 output.webp`
+    - 幅が 640px 未満の場合は `-vf scale=1280:-1` 部分は省略する
