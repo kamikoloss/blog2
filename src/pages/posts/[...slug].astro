@@ -14,7 +14,7 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
-const headTitle = `${SITE_TITLE} - ${post.data.date} ${post.data.title}`;
+const headTitle = `${SITE_TITLE} - ${post.id} ${post.data.title}`;
 ---
 
 <html lang="ja">
@@ -25,7 +25,7 @@ const headTitle = `${SITE_TITLE} - ${post.data.date} ${post.data.title}`;
 		<header>
 			<h1><a href="/">{SITE_TITLE}</a></h1>
 			<h2>
-				<div>{post.data.date}</div>
+				<div>{post.id}</div>
 				<div>{post.data.title}</div>
 			</h2>
 		</header>
