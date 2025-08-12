@@ -20,4 +20,4 @@ All commands are run from the root of the project, from a terminal:
     - 幅が 1280px 未満の場合は `-vf scale=1280:-1` 部分は省略する
 - 動画
     - `ffmpeg -i input.mp4 -vf scale=640:-1 -r 15 output.webp`
-    - 幅が 640px 未満の場合は `-vf scale=1280:-1` 部分は省略する
+    - 幅が 640px 未満の場合は `-vf scale=640:-1` 部分は省略する
