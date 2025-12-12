@@ -19,18 +19,16 @@ const posts = (await getCollection('blog')).sort(
 		</header>
 		<hr />
 		<main>
-			<ul>
-				{
-					posts.map((post) => (
-						<li>
-							<a href={`/posts/${post.id}/`}>
-								<span>{post.id}</span>
-								<span>{post.data.title}</span>
-							</a>
-						</li>
-					))
-				}
-			</ul>
+			{
+				posts.map((post) => (
+					<p>
+						<a href={`/posts/${post.id}/`}>
+							<span>{post.id}</span>
+							<span>{post.data.title}</span>
+						</a>
+					</p>
+				))
+			}
 		</main>
 		<hr />
 		<footer>
